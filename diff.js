@@ -24,17 +24,25 @@ async function diff (context, heroku) {
       features: diffFeatures(heroku, context.args.app1, context.args.app2)
     })
     const list = [...files, ...diffs.env, ...diffs.stack, ...diffs.bp, ...diffs.addons, ...diffs.features]
-    cli.table(list, {
+    const truncated = list.map(entry => ({ prop: entry.prop, app1: trunc(entry.app1), app2: trunc(entry.app2) }))
+    console.log()
+    cli.table(truncated, {
       columns: [
         {key: 'prop', label: 'property' },
         {key: 'app1', label: context.args.app1},
         {key: 'app2', label: context.args.app2}
       ]
     })
+    console.log()
   }
   catch (err) {
     throw err instanceof a.ErrorList ? err[0] : err
   }
+}
+
+function trunc(val) {
+  const v = (val || '').toString()
+  return v.length > 56 ? v.slice(0, 56) + '...' : v
 }
 
 async function diffFiles(heroku, app1, app2) {
