@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "release": "np"
+  },
   "dependencies": {
     "awaiting": "^3.0.0",
     "heroku-cli-util": "^6.2.0"
+  },
+  "devDependencies": {
+    "np": "^2.16.0"
   }
 }
