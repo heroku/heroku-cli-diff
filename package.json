@@ -1,0 +1,10 @@
+{
+  "name": "heroku-cli-diff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "awaiting": "^3.0.0",
+    "heroku-cli-util": "^6.2.0"
+  }
+}
