@@ -36,7 +36,8 @@ async function diff (context, heroku) {
     console.log()
   }
   catch (err) {
-    throw err instanceof a.ErrorList ? err[0] : err
+    // TODO: make awaiting return the first error by default, with an iterable
+    throw err instanceof a.ErrorList ? Array.from(err)[0] : err
   }
 }
 
