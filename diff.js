@@ -65,6 +65,7 @@ async function checksum(heroku, app) {
     if (err.statusCode === 404) {
       throw new Error(`App not found: ${app}`)
     }
+    throw err
   }
 }
 
