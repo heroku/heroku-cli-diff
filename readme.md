@@ -8,9 +8,10 @@ $ heroku plugins:install heroku-cli-diff
 
 These properties are diffed:
 
+- files (via the slug checksum)
 - config vars
 - stack
-- buildpacks
+- buildpacks (including order)
 - add-ons
 - feature flags
 
