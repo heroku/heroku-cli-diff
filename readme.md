@@ -42,3 +42,11 @@ config (MIN_STABLE_NODE)        0.8.5
 config (RESOLVER_TIMEOUT)                                                 1
 feature (log-runtime-metrics)   enabled                                   disabled
 ```
+
+```
+$ heroku apps:diff semver semver
+
+property  semver  semver
+────────  ──────  ──────
+
+```
