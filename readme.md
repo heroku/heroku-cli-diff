@@ -20,6 +20,8 @@ These properties are diffed:
 $ heroku apps:diff APP1 APP2
 ```
 
+## Examples
+
 ```
 $ heroku apps:diff go-getting-started-staging go-on-heroku
 
