@@ -1,19 +1,18 @@
 # heroku-cli-diff
 
-Lists differences between Heroku apps:
+List differences between Heroku apps.
+
+```
+$ heroku plugins:install heroku-cli-diff
+```
+
+These properties are diffed:
 
 - config vars
 - stack
 - buildpacks
 - add-ons
 - feature flags
-
-## Installation
-
-```
-$ heroku plugins:install heroku-cli-diff
-Installing plugin heroku-cli-diff... done
-```
 
 ## Use
 
