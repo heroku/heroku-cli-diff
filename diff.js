@@ -53,7 +53,12 @@ async function diffFiles(heroku, app1, app2) {
 
 async function checksum(heroku, app) {
   try {
-    const releases = await heroku.get(`/apps/${app}/releases`)
+    const releases = await heroku.request({
+      method: 'GET',
+      path: `/apps/${app}/releases`,
+      headers: { Range: 'version ..; max=1, order=desc' },
+      partial: true
+    })
     if (releases && releases[0] && releases[0].slug) {
       const slugID = releases[0].slug.id
       const slug = await heroku.get(`/apps/${app}/slugs/${slugID}`)
