@@ -3,6 +3,10 @@
   "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "/diff.js",
+    "/index.js"
+  ],
   "scripts": {
     "release": "np"
   },
