@@ -1,4 +1,4 @@
-# heroku-cli-diff
+# Heroku CLI Diff
 
 List differences between Heroku apps.
 
