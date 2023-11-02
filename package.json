@@ -1,8 +1,8 @@
 {
-  "name": "heroku-cli-diff",
+  "name": "@heroku/heroku-cli-diff",
   "version": "1.0.7",
   "main": "index.js",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "files": [
     "/diff.js",
     "/index.js"
