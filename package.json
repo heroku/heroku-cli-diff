@@ -3,6 +3,9 @@
   "version": "1.0.7",
   "main": "index.js",
   "license": "Apache 2.0",
+  "engines": {
+    "node": ">=16"
+  },
   "files": [
     "/diff.js",
     "/index.js"
@@ -12,9 +15,9 @@
   },
   "dependencies": {
     "awaiting": "^3.0.0",
-    "heroku-cli-util": "^6.2.0"
+    "@heroku/heroku-cli-util": "8.x"
   },
   "devDependencies": {
-    "np": "^2.16.0"
+    "np": "10.x"
   }
 }
