@@ -10,14 +10,13 @@
     "/diff.js",
     "/index.js"
   ],
-  "scripts": {
-    "release": "np"
-  },
+  "scripts": {},
   "dependencies": {
     "awaiting": "^3.0.0",
     "@heroku/heroku-cli-util": "8.x"
   },
-  "devDependencies": {
-    "np": "10.x"
-  }
+  "overrides": {
+    "cross-spawn": "^6.0.6"
+  },
+  "devDependencies": {}
 }
