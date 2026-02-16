@@ -13,7 +13,7 @@
   "scripts": {},
   "dependencies": {
     "awaiting": "^3.0.0",
-    "@heroku/heroku-cli-util": "8.x"
+    "@heroku/heroku-cli-util": "10.x"
   },
   "overrides": {
     "cross-spawn": "^6.0.6"
