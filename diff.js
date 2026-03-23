@@ -12,6 +12,8 @@ module.exports = {
 }
 
 async function diff (context, heroku) {
+  cli.warn('This plugin has been archived and is no longer maintained. Uninstall this archived plugin by running `heroku plugins:uninstall @heroku/heroku-cli-diff`.')
+
   try {
     // check files first to ensure that the apps exist
     const files = await diffFiles(heroku, context.args.app1, context.args.app2)
