@@ -1,5 +1,7 @@
 # Heroku CLI Diff
 
+**NOTE**: This plugin has been archived and is no longer maintained.
+
 List differences between Heroku apps.
 
 ```
