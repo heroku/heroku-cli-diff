@@ -12,7 +12,7 @@ module.exports = {
 }
 
 async function diff (context, heroku) {
-  cli.warn('This plugin has been archived and is no longer maintained. Uninstall this archived plugin by running `heroku plugins:uninstall @heroku/heroku-cli-diff`.')
+  cli.warn('This command is now available as part of the Heroku CLI. Uninstall this archived plugin by running `heroku plugins:uninstall @heroku/heroku-cli-diff`.')
 
   try {
     // check files first to ensure that the apps exist
